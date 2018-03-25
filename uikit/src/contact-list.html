@@ -1,0 +1,14 @@
+<template>
+  <div class="uk-card uk-card-default">
+    <div class="uk-card-body uk-padding-small">
+      <ul class="uk-nav">
+        <li repeat.for="contact of contacts" class="uk-padding-small ${contact.id === $parent.selectedId ? 'uk-active uk-background-primary uk-light' : ''}">
+          <a route-href="route: contacts; params.bind: {id:contact.id}" click.delegate="$parent.select(contact)">
+            <h4>${contact.firstName} ${contact.lastName}</h4>
+            <div>${contact.email}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>

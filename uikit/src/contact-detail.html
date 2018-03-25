@@ -1,0 +1,43 @@
+<template>
+  <div class="uk-card uk-card-default">
+    <div class="uk-card-header uk-card-primary">
+      <h3 class="uk-card-title">Profile</h3>
+    </div>
+    <div class="uk-card-body">
+      <form class="uk-form-horizontal" role="form">
+        <div>
+          <label class="uk-form-label">First Name</label>
+          <div class="uk-form-controls">
+              <input type="text" placeholder="first name" class="uk-input" value.bind="contact.firstName">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">Last Name</label>
+          <div class="uk-form-controls">
+            <input type="text" placeholder="last name" class="uk-input" value.bind="contact.lastName">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">Email</label>
+          <div class="uk-form-controls">
+            <input type="text" placeholder="email" class="uk-input" value.bind="contact.email">
+          </div>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label">Phone Number</label>
+          <div class="uk-form-controls">
+            <input type="text" placeholder="phone number" class="uk-input" value.bind="contact.phoneNumber">
+          </div>
+        </div>
+      </form>
+      <div class="uk-margin">
+        <button class="uk-button uk-button-primary uk-align-right" click.delegate="save()" disabled.bind="!canSave">Save</button>
+      </div>
+    </div>
+  </div>
+
+ 
+</template>
