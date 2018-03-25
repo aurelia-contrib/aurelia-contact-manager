@@ -1,0 +1,45 @@
+<template>
+  <div class="panel">
+    <div class="panel-heading">
+      <h3>Profile</h3>
+    </div>
+    <div class="panel-block">
+      <form role="form" style="width:100%">
+        <div class="field columns">
+          <label class="label column is-one-third">First Name</label>
+          <div class="control column">
+            <input type="text" placeholder="first name" class="input" value.bind="contact.firstName">
+          </div>
+        </div>
+
+        <div class="field columns">
+          <label class="label column is-one-third">Last Name</label>
+          <div class="control column">
+            <input type="text" placeholder="last name" class="input" value.bind="contact.lastName">
+          </div>
+        </div>
+
+        <div class="field columns">
+          <label class="label column is-one-third">Email</label>
+          <div class="control column">
+            <input type="text" placeholder="email" class="input" value.bind="contact.email">
+          </div>
+        </div>
+
+        <div class="field columns">
+          <label class="label column is-one-third">Phone Number</label>
+          <div class="control column">
+            <input type="text" placeholder="phone number" class="input" value.bind="contact.phoneNumber">
+          </div>
+        </div>
+        <div class="field columns">
+          <div class="control column">
+            <button class="button is-success is-pulled-right" click.delegate="save()" disabled.bind="!canSave">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</template>

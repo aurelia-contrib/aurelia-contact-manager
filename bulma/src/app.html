@@ -1,0 +1,23 @@
+<template>
+  <require from="./styles.css"></require>
+  <require from="./contact-list"></require>
+  <nav class="navbar is-fixed-top is-light" role="navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <span class="icon">
+          <i class="fa fa-user"></i>
+        </span>
+        <span>Contacts</span>
+      </a>
+    </div>
+  </nav>
+
+  <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+
+  <div class="container is-fluid">
+    <div class="columns">
+      <contact-list class="column is-one-third"></contact-list>
+      <router-view class="column"></router-view>
+    </div>
+  </div>
+</template>
