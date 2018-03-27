@@ -6,7 +6,7 @@ This repo contains an implementation of the [Aurelia Framework Contact Manager T
 ## UIKit
 
 The finished Appplication...
-![the finished product](/contact-manager-uikit.png)
+![the finished product](contact-manager-uikit.png)
 ## Install UIKit
 
 ```
