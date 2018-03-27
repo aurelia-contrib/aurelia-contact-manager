@@ -5,7 +5,7 @@ for the css.
 
 ## Bulma
 The finished application...
-![The Finished Product](/contact-manager-bulma.png)
+![The Finished Product](contact-manager-bulma.png)
 
 
 ### Install Bulma
